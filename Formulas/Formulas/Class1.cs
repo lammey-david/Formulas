@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Formulas
-{
-    public class Class1
-    {
+namespace Formulas {
+    public class Class1 {
+
+        public int testThis() {
+
+            return 5;
+        }
+
     }
 }
