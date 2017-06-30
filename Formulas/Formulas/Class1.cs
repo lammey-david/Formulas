@@ -19,7 +19,7 @@ namespace Formulas {
 
         public int anotherTest(int int1, int int2)
         {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }
