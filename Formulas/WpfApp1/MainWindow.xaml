@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        xmlns:dxdo="http://schemas.devexpress.com/winfx/2008/xaml/docking" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" x:Class="WpfApp1.MainWindow"
+        xmlns:dxdo="http://schemas.devexpress.com/winfx/2008/xaml/docking" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="WpfApp1.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
@@ -16,27 +16,41 @@
                         <Grid>
                             <TextBlock
                                 VerticalAlignment="Center"
-                                HorizontalAlignment="Center">
-                                Some Stuff will probably go here
-                            </TextBlock>
+                                HorizontalAlignment="Center"><Run Text="Some Stuff will probably go here"/></TextBlock>
                         </Grid>
 
                     </dxdo:LayoutPanel>
                     <dxdo:LayoutPanel Caption="Panel2">
                         <TextBlock
                             VerticalAlignment="Center"
-                            HorizontalAlignment="Center">
-                            More stuff goes here?
-                        </TextBlock>
+                            HorizontalAlignment="Center"><Run Text="More stuff goes here?"/></TextBlock>
                     </dxdo:LayoutPanel>
                 </dxdo:LayoutGroup>
-                <dxdo:LayoutPanel Caption="Panel3">
-                    <TextBlock
+                <dxdo:LayoutGroup Orientation="Vertical">
+                    <dxdo:LayoutPanel Caption="Panel3">
+                        <TextBlock
                         VerticalAlignment="Center"
-                        HorizontalAlignment="Center">
-                        Stuff definitely goes here
-                    </TextBlock>
-                </dxdo:LayoutPanel>
+                        HorizontalAlignment="Center"><Run Text="Stuff definitely goes here"/></TextBlock>
+                    </dxdo:LayoutPanel>
+                    <dxdo:LayoutPanel Caption="Panel">
+                        <dx:DXTabControl>
+                            <dx:DXTabItem Header="Tab1">
+                                <Grid Background="Transparent">
+                                    <TextBlock>
+                                        Details of selected stuff?
+                                    </TextBlock>
+                                </Grid>
+                            </dx:DXTabItem>
+                            <dx:DXTabItem Header="Tab2">
+                                <Grid Background="Transparent">
+                                    <TextBlock>
+                                        I feel really good about this tab
+                                    </TextBlock>
+                                </Grid>
+                            </dx:DXTabItem>
+                        </dx:DXTabControl>
+                    </dxdo:LayoutPanel>
+                </dxdo:LayoutGroup>
             </dxdo:LayoutGroup>
         </dxdo:DockLayoutManager>
 
