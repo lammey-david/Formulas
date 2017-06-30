@@ -16,5 +16,10 @@ namespace Formulas {
 
             return (int)(i1 + i2);
         }
+
+        public int anotherTest(int int1, int int2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
