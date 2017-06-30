@@ -19,7 +19,9 @@ namespace Formulas.Tests {
         [TestMethod()]
         public void sadPath() {
 
-            Assert.Fail();
+            var c1 = new Class1();
+
+            Assert.ThrowsException<InvalidOperationException>(() => c1.testThis2(null, 2));
         }
     }
 }

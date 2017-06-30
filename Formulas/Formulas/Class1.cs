@@ -12,10 +12,9 @@ namespace Formulas {
             return 5;
         }
 
-        public int testThis2()
-        {
+        public int testThis2(int? i1, int? i2) {
 
-            return 5;
+            return (int)(i1 + i2);
         }
     }
 }
