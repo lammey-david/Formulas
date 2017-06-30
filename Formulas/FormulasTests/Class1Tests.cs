@@ -19,8 +19,6 @@ namespace Formulas.Tests {
         [TestMethod()]
         public void sadPath() {
 
-            var c1 = new Class1();
-
             Assert.Fail();
         }
     }
