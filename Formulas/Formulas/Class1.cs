@@ -12,5 +12,10 @@ namespace Formulas {
             return 5;
         }
 
+        public int testThis2()
+        {
+
+            return 5;
+        }
     }
 }
