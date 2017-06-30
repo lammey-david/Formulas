@@ -15,5 +15,13 @@ namespace Formulas.Tests {
 
             Assert.AreEqual(5, c1.testThis());
         }
+
+        [TestMethod()]
+        public void sadPath() {
+
+            var c1 = new Class1();
+
+            Assert.ThrowsException<InvalidOperationException>(() => c1.testThis2(null, 2));
+        }
     }
 }
